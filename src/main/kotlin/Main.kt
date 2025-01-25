@@ -1,6 +1,6 @@
 package org.Hamer
 
-import application.FlowerShop
+import cmd.FlowerShop
 
 fun main() {
     run()

@@ -1,4 +1,4 @@
-package application
+package cmd
 
 class FlowerShop {
 

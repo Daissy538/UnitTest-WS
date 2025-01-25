@@ -1,17 +1,25 @@
 package infrastructure
 
-import core.outputPort.StockRepository
-import core.entities.Product
+import org.Hamer.core.StockRepository
+import org.Hamer.core.Product
 import org.springframework.stereotype.Repository
+import java.util.UUID
 
 @Repository
 class StockRepositoryImpl: StockRepository {
+
+    private val products: MutableList<Product> = mutableListOf()
+
     override fun addProduct(product: Product) {
-        TODO("Not yet implemented")
+        this.products.add(product)
     }
 
     override fun getProducts(): List<Product> {
-        TODO("Not yet implemented")
+        return products.toList()
+    }
+
+    override fun getProduct(id: UUID): Product?{
+        return products.find { it.code == id }
     }
 
 }
