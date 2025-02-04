@@ -1,14 +1,10 @@
-package org.Hamer.infrastructure
+package `classical-answer`.fakes
 
-import org.Hamer.core.StockRepository
 import org.Hamer.core.Product
-import org.springframework.stereotype.Repository
-import org.springframework.stereotype.Service
-import java.util.UUID
+import org.Hamer.core.StockRepository
+import java.util.*
 
-@Repository
-class StockRepositoryImpl: StockRepository {
-
+class StockRepositoryFake: StockRepository {
     private val products: MutableList<Product> = mutableListOf()
 
     override fun addProduct(product: Product) {
@@ -22,5 +18,4 @@ class StockRepositoryImpl: StockRepository {
     override fun getProduct(id: UUID): Product?{
         return products.find { it.code == id }
     }
-
 }

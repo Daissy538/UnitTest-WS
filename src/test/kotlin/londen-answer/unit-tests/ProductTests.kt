@@ -1,14 +1,11 @@
 package `londen-answer`.`unit-tests`
 
 import org.Hamer.core.Product
-import org.junit.jupiter.api.extension.ExtendWith
-import org.mockito.junit.jupiter.MockitoExtension
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFails
 import kotlin.test.assertNotNull
 
-@ExtendWith(MockitoExtension::class)
 class ProductTests {
 
     @Test

@@ -1,8 +1,8 @@
 package `londen-answer`.`unit-tests`
 
 import org.Hamer.core.Stock
-import org.Hamer.core.StockRepository
 import org.Hamer.core.Product
+import org.Hamer.core.StockRepository
 import org.junit.jupiter.api.extension.ExtendWith
 import org.mockito.Mock
 import org.mockito.junit.jupiter.MockitoExtension
